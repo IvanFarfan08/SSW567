@@ -1,10 +1,10 @@
-name: HW03a Python Tests
+name: HW03a Python Tests (Mocking)
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ HW03a_Mocking ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ HW03a_Mocking ]
 
 jobs:
   test:
