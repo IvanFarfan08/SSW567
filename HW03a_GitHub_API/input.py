@@ -2,6 +2,7 @@ import requests
 import json
 
 def getRepoInformationByID(userId):
+    #Check for right type: string
     if not isinstance(userId, str):
         raise TypeError("Expected a string. Incorrect Type")
 
