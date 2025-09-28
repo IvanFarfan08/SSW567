@@ -32,4 +32,3 @@ def getRepoInformationByID(userId):
             for key, value in responseDictionary.items()
             )
 
-print(getRepoInformationByID("Johan0214"))
