@@ -1,4 +1,4 @@
-name: Python Tests
+name: HW03a Python Tests
 
 on:
   push:
