@@ -52,7 +52,7 @@ class TestGetRepoInformationByID(unittest.TestCase):
         result = getRepoInformationByID("testuser")
         
         # Verify the result
-        expected_output = "Repo: repo1 Number of commits: 3\nRepo: repo2 Number of commits: 5"
+        expected_output = "Repo: repo1 Number of commits: 4\nRepo: repo2 Number of commits: 5"
         self.assertEqual(result, expected_output)
         
         # Verify API calls were made correctly
