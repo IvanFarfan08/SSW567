@@ -9,13 +9,13 @@ def getRepoInformationByID(userId):
     responseDictionary = {}
 
     #Request to retrieve repo of user.
-    repoList_URL = f"https://api.github.com/users/{userId}/repos"
+    repoList_URL = f'https://api.github.com/users/{userId}/repos'
     repoList_Response = requests.get(repoList_URL)
     repoList_JSON = repoList_Response.json()
 
     for repo in repoList_JSON:
         #Do second request to retrieve number of commits for each repo.
-        commits_URL = f"https://api.github.com/repos/{userId}/{repo["name"]}/commits"
+        commits_URL = f"https://api.github.com/repos/{userId}/{repo['name']}/commits"
         commits_Response = requests.get(commits_URL)
         commits_JSON = commits_Response.json()
 
