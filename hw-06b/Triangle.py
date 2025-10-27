@@ -33,7 +33,7 @@ def classifyTriangle(a,b,c):
         
     if a <= 0 or b <= b or c <= 0:
         return 'InvalidInput'
-    
+        
     # verify that all 3 inputs are integers  
     # Python's "isinstance(object,type) returns True if the object is of the specified type
     if not(isinstance(a,int) and isinstance(b,int) and isinstance(c,int)):
